@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sass/dist/style.css">
+   <script src="js/script.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <main>
+      <section class="daftar-apotek">
+         <div class="logo">
+            <img src="img/logo.png" alt="">
+         </div>
+
+         <div class="maps">
+            <img src="img/apotek/map.png" alt="">
+            <div class="search-place">
+               <div class="search">
+                  <img src="img/search.png" alt="">
+                  <div class="text">Search Location</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="title">
+            Apotek terdekat
+         </div>
+
+         <div class="apoteks" id="apotek"></div>
+
+      </section>
+
+      <nav>
+         <div class="navbar">
+            <a href="home.html"><img src="img/navs/home.png" alt=""></a href="">
+            <a href="daftar_apotek.html"><img src="img/navs/charts-active.png" alt=""></a href="">
+            <a href="pengambilan.html"><img src="img/navs/payment.png" alt=""></a href="">
+            <a href="profile.html"><img src="img/navs/profile.png" alt=""></a href="">
+         </div>
+         <div class="bot-line"><img src="img/navs/bot-line.png" alt=""></div>
+      </nav>
+   </main>
+
+   <script>
+      const apotekPlace = document.getElementById('apotek')
+      const apoteks = [
+         {
+            name: 'Apotek Pharm 24 Kusumanegara',
+            img: 'img/apotek/pharm.png',
+            open: '24 jam',
+            address: 'Jl. Kusumanegara No.104, Warungboto, Kec. Umbulharjo, Kota Yogyakarta.'
+         },{
+            name: 'Apotek K24 Kusumanegara',
+            img: 'img/apotek/k24.png',
+            open: '24 jam',
+            address: 'Jl. Kusumanegara No.86, Warungboto, Kec. Umbulharjo, Kota Yogyakarta.'
+         },{
+            name: 'Apotek K24 Kusumanegara',
+            img: 'img/apotek/k24.png',
+            open: '24 jam',
+            address: 'Jl. Kusumanegara No.86, Warungboto, Kec. Umbulharjo, Kota Yogyakarta.'
+         }
+      ]
+
+      apoteks.forEach((apotek) => {
+         apotekPlace.innerHTML += 
+            `<a href="apotek.html" class="apotik">
+               <img src="${apotek.img}" alt="">
+               <div class="text">
+                  <div class="name">${apotek.name}</div>
+                  <div class="open">${apotek.open}</div>
+                  <div class="address">${apotek.address}</div>
+               </div>
+            </a>`
+      })
+   </script>
+</body>
+</html>

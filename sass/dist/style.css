@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  width: 375px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.home, .pengambilan, .profile, .daftar-apotek, .apotek, .shop, .pembayaran {
+  background: url(../../img/background/back-body.png) no-repeat;
+  background-position: 270px 234px;
+}
+
+.index .img {
+  text-align: center;
+  margin: 115px 0 0 0;
+}
+.index .text {
+  margin: 65px 0 0 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+.index .auth {
+  margin: 100px 0 50px 0;
+}
+.index .auth .register {
+  width: 261px;
+  height: 51px;
+  background-color: #231F20;
+  margin: 0 auto 22px;
+  color: #FCFCFC;
+  display: flex;
+  font-size: 18px;
+}
+.index .auth .register span {
+  margin: auto;
+}
+.index .auth .or {
+  margin: 0 auto 22px;
+  text-align: center;
+  font-size: 13px;
+}
+.index .auth .login {
+  width: 261px;
+  display: flex;
+  margin: auto;
+  justify-content: space-between;
+}
+.index .auth .login div {
+  width: 126px;
+  height: 51px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #231F20;
+  color: #FCFCFC;
+  font-size: 18px;
+}
+.index .auth .login div a {
+  color: #FCFCFC;
+  text-decoration: none;
+}
+.index .auth .login div .apple {
+  margin: 0 6px 0 0;
+}
+.index .auth .login div .google {
+  margin: 0 3px 0 0;
+}
+.index .bot-line {
+  text-align: center;
+}
+
+.home {
+  text-align: center;
+}
+.home .benner {
+  margin: 0 0 20px 0;
+}
+.home .features {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 17px;
+}
+.home .features .feature .icon {
+  width: 65px;
+  height: 65px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+}
+.home .features .feature .icon img {
+  margin: auto;
+}
+.home .features .feature .text {
+  font-size: 11px;
+  font-weight: 700;
+  margin: 3px 0 0 0;
+}
+.home .articles .article {
+  height: 97px;
+  width: 339px;
+  padding: 8px;
+  margin: 0 auto 11px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  background-color: #FCFCFC;
+}
+.home .articles .article .icon {
+  margin-right: 23px;
+}
+.home .articles .article .text {
+  text-align: left;
+}
+.home .articles .article .text .text-head {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+.home .articles .article .text .text-body {
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.pengambilan .barcode {
+  height: 207px;
+  width: 339px;
+  margin: 0 auto 27px;
+  padding: 15px 17px 0 17px;
+  box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  background-color: #FCFCFC;
+}
+.pengambilan .barcode .head {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+.pengambilan .barcode .body {
+  display: flex;
+}
+.pengambilan .barcode .body .text {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pengambilan .barcode .body .text .p {
+  font-size: 14px;
+  font-weight: 700;
+}
+.pengambilan .barcode .body .text .code {
+  font-size: 20px;
+  font-weight: 400;
+}
+.pengambilan .daftar-pembelian .item {
+  width: 369px;
+  height: 94px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 11px;
+  display: flex;
+  background-color: #FCFCFC;
+}
+.pengambilan .daftar-pembelian .item .text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  padding: 0 0 0 5px;
+}
+.pengambilan .daftar-pembelian .item .text .h1 {
+  font-size: 17px;
+  font-weight: 600;
+}
+.pengambilan .daftar-pembelian .item .text .h2 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.pengambilan .daftar-pembelian .item .text .price {
+  font-size: 14px;
+  font-weight: 700;
+}
+.pengambilan .daftar-pembelian .item .total {
+  width: 74px;
+  height: 100%;
+  display: flex;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.pengambilan .daftar-pembelian .item .total .num {
+  margin: auto;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.profile .person {
+  margin: 0 auto 46px;
+  height: 168px;
+  width: 339px;
+  padding: 0 17px;
+  background: url(../../img/background/back-profile.png) no-repeat 110px;
+  background-color: #FCFCFC;
+  border-radius: 15px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+}
+.profile .person .img {
+  margin-right: 34px;
+}
+.profile .person .text .name {
+  font-size: 24px;
+  font-weight: 700;
+}
+.profile .person .text .phone {
+  font-size: 18px;
+  font-weight: 18px;
+}
+.profile .config {
+  text-align: center;
+  padding: 1px;
+}
+.profile .config a {
+  display: flex;
+  align-items: center;
+  padding: 16px 0 16px 22px;
+  margin-bottom: 1px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  background-color: #FCFCFC;
+  text-decoration: none;
+  color: black;
+  font-size: 17px;
+  font-weight: 400;
+}
+.profile .config a img {
+  margin-right: 20px;
+}
+
+.daftar-apotek .maps {
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  display: flexf;
+}
+.daftar-apotek .maps img {
+  filter: drop-shadow(0 5px 6px rgba(0, 0, 0, 0.25));
+  position: relative;
+}
+.daftar-apotek .maps .search-place {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.daftar-apotek .maps .search-place .search {
+  width: 225px;
+  padding: 6px;
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.daftar-apotek .maps .search-place .search img {
+  margin-right: 8px;
+}
+.daftar-apotek .maps .search-place .search .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #C4C4C4;
+}
+.daftar-apotek .title {
+  margin-bottom: 12px;
+}
+.daftar-apotek .apoteks .apotik {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  background-color: #FCFCFC;
+  border-radius: 15px;
+  border: 1px solid #C4C4C4;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  padding: 4px;
+  text-decoration: none;
+  color: black;
+}
+.daftar-apotek .apoteks .apotik img {
+  margin-right: 9px;
+}
+.daftar-apotek .apoteks .apotik .text div {
+  margin: 5px 0;
+}
+.daftar-apotek .apoteks .apotik .text .name {
+  font-size: 14px;
+  font-weight: 700;
+}
+.daftar-apotek .apoteks .apotik .text .open {
+  font-size: 12px;
+  font-weight: 400;
+}
+.daftar-apotek .apoteks .apotik .text .address {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.apotek .apotek-detail {
+  text-align: center;
+  margin-bottom: 31px;
+}
+.apotek .apotek-detail .head {
+  width: 370px;
+  margin: 0 auto 6px;
+  padding: 0 0 13px 0;
+  border-radius: 20px 20px 0 0;
+  background-color: #FCFCFC;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.apotek .apotek-detail .head img {
+  width: 100%;
+  margin-bottom: 6px;
+}
+.apotek .apotek-detail .head .text .name {
+  margin-bottom: 7px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.apotek .apotek-detail .head .text .address {
+  width: 238px;
+  font-size: 12px;
+  font-weight: 400;
+  margin: auto;
+}
+.apotek .apotek-detail .open {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+  margin: auto;
+  padding: 16px 22px;
+  border-radius: 0 0 20px 20px;
+  background-color: #FCFCFC;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.apotek .apotek-detail .open span {
+  font-size: 18px;
+  font-weight: 400;
+}
+.apotek .reviewers .reviewer {
+  width: 370px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto 3px;
+  background-color: #FCFCFC;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+.apotek .reviewers .reviewer img {
+  margin-right: 13px;
+}
+.apotek .reviewers .reviewer .text .name {
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+.apotek .reviewers .reviewer .text .comment {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.shop .logo-back {
+  margin-bottom: 30px;
+}
+.shop .filter {
+  width: 145px;
+  padding: 7px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #231F20;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.shop .filter img {
+  margin-right: 5px;
+}
+.shop .filter .text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #FCFCFC;
+  letter-spacing: 0.05em;
+}
+.shop .products .product {
+  width: 365px;
+  height: 94px;
+  display: flex;
+  margin: 0 auto 12px;
+  background-color: #FCFCFC;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.shop .products .product .img {
+  margin-right: 8px;
+}
+.shop .products .product .text {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: center;
+}
+.shop .products .product .text .name {
+  font-size: 17px;
+  font-weight: 500;
+}
+.shop .products .product .text .type {
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 12px;
+}
+.shop .products .product .text .price {
+  font-size: 14px;
+  font-weight: 700;
+}
+.shop .products .product .many {
+  width: 74px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+}
+.shop .products .product .many .plus, .shop .products .product .many .minus {
+  height: 29px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  font-size: 24px;
+  font-weight: 700;
+}
+.shop .products .product .many .plus span, .shop .products .product .many .minus span {
+  margin: auto;
+}
+.shop .products .product .many .num {
+  flex-grow: 1;
+  display: flex;
+}
+.shop .products .product .many .num span {
+  margin: auto;
+  font-size: 24px;
+  font-weight: 700;
+}
+.shop .products .product .many .plus {
+  color: #4CAF50;
+}
+.shop .products .product .many .minus {
+  color: #FD4E4E;
+}
+
+.pembayaran .kode-pembelian {
+  width: 339px;
+  height: 207px;
+  margin: 0 auto 45px;
+  background-color: #231F20;
+  border-radius: 15px;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.pembayaran .kode-pembelian .icon {
+  margin-bottom: 16px;
+}
+.pembayaran .kode-pembelian .text {
+  color: #FCFCFC;
+  font-size: 14px;
+  font-weight: 700;
+}
+.pembayaran .kode-pembelian .code {
+  color: #FCFCFC;
+  font-size: 20px;
+  font-weight: 400;
+}
+.pembayaran .title2 {
+  margin-bottom: 18px;
+}
+.pembayaran .methods .method {
+  width: 357px;
+  display: flex;
+  align-items: center;
+  padding: 20px 39px;
+  margin: 0 auto 10px;
+  border-radius: 15px;
+  background-color: #FCFCFC;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+}
+.pembayaran .methods .method img {
+  margin-right: 17px;
+}
+
+.logo {
+  margin: 41px auto 20px;
+  text-align: center;
+}
+
+.logo-back {
+  display: flex;
+  justify-content: space-between;
+  margin: 41px auto 20px;
+  align-items: center;
+}
+.logo-back span {
+  opacity: 0;
+}
+
+.danger {
+  background-color: #FD4E4E;
+}
+
+.primary {
+  background-color: #FCFCFC;
+}
+
+.title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.title2 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.title-line {
+  height: 2px;
+  width: 135px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+nav {
+  position: fixed;
+  margin: auto;
+  bottom: 0;
+  background-color: white;
+}
+nav .buy {
+  margin-bottom: 13px;
+}
+nav .buy a {
+  width: 158px;
+  height: 39px;
+  margin: auto;
+  background-color: #231F20;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  text-decoration: none;
+  color: #FCFCFC;
+  font-size: 14px;
+  font-weight: 700;
+}
+nav .buy a span {
+  margin: auto;
+}
+nav .total-price {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+  margin-bottom: 12px;
+  background-color: #231F20;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  color: #FCFCFC;
+}
+nav .total-price .text {
+  font-size: 17px;
+  font-weight: 500;
+}
+nav .total-price .total {
+  font-size: 14px;
+  font-weight: 700;
+}
+nav .checkout {
+  height: 51px;
+  margin-bottom: 12px;
+  display: flex;
+}
+nav .checkout .info {
+  flex-grow: 1;
+  display: flex;
+  border: 2px solid #231F20;
+  align-items: center;
+}
+nav .checkout .info .icon {
+  margin: 0 14px;
+}
+nav .checkout .info .text .item {
+  font-size: 13px;
+  font-weight: 400;
+  margin-bottom: 3px;
+}
+nav .checkout .info .text .price {
+  font-size: 14px;
+  font-weight: 700;
+}
+nav .checkout .btn {
+  width: 149px;
+  display: flex;
+  background-color: #231F20;
+}
+nav .checkout .btn a {
+  margin: auto;
+  text-decoration: none;
+  color: #FCFCFC;
+  font-size: 18px;
+  font-weight: 700;
+}
+nav .navbar {
+  height: 60px;
+  width: 375px;
+  border-radius: 10px;
+  background-color: #FCFCFC;
+  box-shadow: 0 -3px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .bot-line {
+  text-align: center;
+  margin: 0;
+}

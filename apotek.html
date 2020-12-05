@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sass/dist/style.css">
+   <script src="js/script.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <main>
+      <section class="apotek">
+
+         <div class="logo-back">
+            <a href="daftar_apotek.html"><img src="img/back.png" alt=""></a>
+            <img src="img/logo.png" alt="">
+            <span>asd</span>
+         </div>
+
+         <div class="apotek-detail">
+            <div class="head">
+               <img src="img/apotek/pharm-back.png" alt="">
+               <div class="text">
+                  <div class="name">Apotek Pharam 24 Kusumanegara</div>
+                  <div class="address">Jl. Kusumanegara No.104, Warungboto, Kec. Umbulharjo, Kota Yogyakarta.</div>
+               </div>
+            </div>
+            <div class="open">
+               <span>OPEN</span>
+               <span>24 Jam</span>
+            </div>
+         </div>
+
+         <div class="title">Ulasan</div>
+
+         <div class="title-line"></div>
+
+         <div class="reviewers" id="reviewer">
+            
+         </div>
+      </section>
+
+      <nav>
+         <div class="buy">
+            <a href="shop.html"><span>Beli obat</span></a>
+         </div>
+         <div class="navbar">
+            <a href="home.html"><img src="img/navs/home.png" alt=""></a href="">
+            <a href="apotek.html"><img src="img/navs/charts-active.png" alt=""></a href="">
+            <a href="pengambilan.html"><img src="img/navs/payment.png" alt=""></a href="">
+            <a href="profile.html"><img src="img/navs/profile.png" alt=""></a href="">
+         </div>
+         <div class="bot-line"><img src="img/navs/bot-line.png" alt=""></div>
+      </nav>
+   </main>
+
+   <script>
+      const reviewerPlace = document.getElementById('reviewer')
+      const reviewers = [
+         {
+            name: 'Guy Hawkins',
+            img: 'img/reviews/guy hawkins.png',
+            comment: 'Lenkap dan pelayanan cepat'
+         },{
+            name: 'Cody Fisher',
+            img: 'img/reviews/cody fisher.png',
+            comment: 'Sukaaaaa unch unch'
+         },{
+            name: 'Dianne Russel',
+            img: 'img/reviews/dianne russel.png',
+            comment: 'Memang parkirnya Ajaib'
+         }
+      ]
+
+      reviewers.forEach(reviewer => {
+         reviewerPlace.innerHTML += 
+            `<div class="reviewer">
+               <img src="${reviewer.img}" alt="">
+               <div class="text">
+                  <div class="name">${reviewer.name}</div>
+                  <div class="comment">${reviewer.comment}</div>
+               </div>
+            </div>`
+      });
+   </script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sass/dist/style.css">
+   <title>Document</title>
+</head>
+<body>
+   <main>
+      <section class="home">
+         <div class="logo">
+            <img src="img/logo.png" alt="">
+         </div>
+
+         <div class="benner">
+            <img src="img/benner.png" alt="">
+         </div>
+
+         <div class="title">Features</div>
+
+         <div class="features" id="feature"></div>
+
+         <div class="title">Artikel Kesehatan</div>
+
+         <div class="articles" id="article"></div>
+      </section>
+
+      <nav>
+         <div class="navbar">
+            <a href="home.html"><img src="img/navs/home-active.png" alt=""></a href="">
+            <a href="daftar_apotek.html"><img src="img/navs/charts.png" alt=""></a href="">
+            <a href="pengambilan.html"><img src="img/navs/payment.png" alt=""></a href="">
+            <a href="profile.html"><img src="img/navs/profile.png" alt=""></a href="">
+         </div>
+         <div class="bot-line"><img src="img/navs/bot-line.png" alt=""></div>
+      </nav>
+   </main>
+   
+   <script>
+      const featuresPlace = document.getElementById('feature')
+      const features = [
+         {
+            img: 'img/features/covid.png', 
+            text: 'Covid-19',
+            color: 'danger'
+         },{
+            img: 'img/features/artikel.png', 
+            text: 'Artikel',
+            color: 'primary'  
+         },{
+            img: 'img/features/promo.png', 
+            text: 'Promo',
+            color: 'primary'
+         },{
+            img: 'img/features/tips.png',
+            text: 'Tips',
+            color: 'primary'
+         }
+      ]
+
+      features.forEach(feature => {
+         featuresPlace.innerHTML += 
+            `<div class="feature">
+               <div class="icon ${feature.color}">
+                  <img src="${feature.img}" alt="">
+               </div>
+               <div class="text">${feature.text}</div>
+            </div>`
+      })
+
+      // object article
+      const articlesPlace = document.getElementById('article')
+      const articles = [
+         {
+            img: 'img/artikel/olahraga.png',
+            title: 'Tips olahraga saat pandemi',
+            media: 'Kompas Health'
+         },{
+            img: 'img/artikel/makanan.png',
+            title: 'Makanan Sehat Ala Chef Juna',
+            media: 'Kompas Health'
+         },{
+            img: 'img/artikel/buah.png',
+            title: 'Manfaat Buah Pisang',
+            media: 'Kompas Food'
+         }
+      ]
+
+      articles.forEach(article => {
+         articlesPlace.innerHTML += 
+            `<div class="article">
+               <div class="icon">
+                  <img src="${article.img}" alt="">
+               </div>
+               <div class="text">
+                  <div class="text-head">${article.title}</div>
+                  <div class="text-body">${article.media}</div>
+               </div>
+            </div>`
+      })
+
+   </script>
+</body>
+</html>

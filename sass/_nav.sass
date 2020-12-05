@@ -1,0 +1,70 @@
+nav 
+   position: fixed 
+   margin: auto
+   bottom: 0
+   background-color: white
+   .buy
+      margin-bottom: 13px
+      a
+         width: 158px
+         height: 39px
+         margin: auto
+         background-color: $btn
+         box-shadow: 0 3px 4px rgba(0, 0, 0, .25)
+         display: flex
+         text-decoration: none
+         color: $white
+         @include font(14px, 700)
+         span
+            margin: auto
+   .total-price
+      display: flex
+      justify-content: space-between
+      padding: 10px 10px
+      margin-bottom: 12px 
+      background-color: $btn
+      box-shadow: 0 3px 4px rgba(0, 0, 0, .25)
+      color: $primary
+      .text 
+         @include font(17px, 500)
+      .total
+         @include font(14px, 700)
+   .checkout
+      height: 51px
+      margin-bottom: 12px
+      display: flex
+      .info
+         flex-grow: 1
+         display: flex 
+         border: 2px solid $btn
+         align-items: center 
+         .icon 
+            margin: 0 14px
+         .text 
+            .item 
+               @include font(13px, 400)
+               margin-bottom: 3px
+            .price
+               @include font(14px, 700)
+      .btn
+         width: 149px 
+         display: flex
+         background-color: $btn
+         a
+            margin: auto
+            text-decoration: none
+            color: $primary
+            @include font(18px, 700)
+
+   .navbar
+      height: 60px
+      width: 375px
+      border-radius: 10px 
+      background-color: #FCFCFC
+      box-shadow: 0 -3px 3px rgba(0, 0, 0, .2)
+      display: flex 
+      justify-content: space-around
+      align-items: center
+   .bot-line 
+      text-align: center
+      margin: 0

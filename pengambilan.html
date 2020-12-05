@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sass/dist/style.css">
+   <title>Document</title>
+</head>
+<body>
+   <main>
+      <section class="pengambilan">
+         <div class="logo">
+            <img src="img/logo.png" alt="">
+         </div>
+   
+         <div class="barcode">
+            <div class="head">Apotek Pharm 24 Kusumanegara</div>
+            <div class="body">
+               <div class="icon"><img src="img/barcode.png" alt=""></div>
+               <div class="text">
+                  <div class="p">Kode Pembelian</div>
+                  <div class="code">XV12SVXA451X</div>
+               </div>
+            </div>
+         </div>
+
+         <div class="title2">Daftar Pembelian</div>
+
+         <div class="daftar-pembelian" id="daftar"> </div>
+
+         <nav>
+            <div class="total-price">
+               <div class="text">Total Pembelian</div>
+               <div class="total">Rp. 119.000</div>
+            </div>
+            
+            <div class="navbar">
+               <a href="home.html"><img src="img/navs/home.png" ></a>
+               <a href="daftar_apotek.html"><img src="img/navs/charts.png" ></a>
+               <a href="pengambilan.html"><img src="img/navs/payment-active.png" ></a>
+               <a href="profile.html"><img src="img/navs/profile.png" ></a>
+            </div>
+            <div class="bot-line"><img src="img/navs/bot-line.png" ></div>
+         </nav>
+   
+      </section>
+   </main>
+
+   <script>
+      const daftarPlace = document.getElementById('daftar')
+      const daftars = [
+         {
+            img: 'img/product/dettol.png',
+            name: 'Dettol Hand Sanitizer',
+            type: 'Hand sainitizer',
+            price: 'Rp. 14.000'
+         },{
+            img: 'img/product/panadol.png',
+            name: 'Panadol Paracetamol',
+            type: 'Paracetamol',
+            price: 'Rp. 10.000'
+         },{
+            img: 'img/product/masker.png',
+            name: 'Sensi Masker 50pcs',
+            type: 'Masker',
+            price: 'Rp. 95.000'
+         }
+      ]
+
+      daftars.forEach((daftar) => {
+         daftarPlace.innerHTML += 
+            `<div class="item">
+               <div class="icon">
+                  <img src="${daftar.img}">
+               </div>
+               <div class="text">
+                  <div class="h1">${daftar.name}</div>
+                  <div class="h2">${daftar.type}</div>
+                  <div class="price">${daftar.price}</div>
+               </div>
+               <div class="total">
+                  <div class="num">1</div>
+               </div>
+            </div>`
+      })
+   </script>
+</body>
+</html>

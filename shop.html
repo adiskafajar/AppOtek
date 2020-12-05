@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="sass/dist/style.css">
+   <script src="js/script.js"></script>
+   <title>Document</title>
+</head>
+<body>
+   <main>
+      <section class="shop">
+         <div class="logo-back">
+            <a href="apotek.html"><img src="img/back.png" alt=""></a>
+            <img src="img/logo.png" alt="">
+            <span>asd</span>
+         </div>
+
+         <div class="filter">
+            <img src="img/product/filter.png">
+            <div class="text">Filter barang</div>
+         </div>
+
+         <div class="products" id="product">
+            
+         </div>
+
+      </section>
+
+      <nav>
+         <div class="checkout">
+            <div class="info">
+               <div class="icon">
+                  <img src="img/payment/troli-black.png" alt="">
+               </div>
+               <div class="text">
+                  <div class="item">3 item</div>
+                  <div class="price">Rp. 119.000</div>
+               </div>
+            </div>
+
+            <div class="btn">
+               <a href="pembayaran.html">Check-out</a>
+            </div>
+         </div>
+         <div class="navbar">
+            <a href="home.html"><img src="img/navs/home.png" alt=""></a href="">
+            <a href="shop.html"><img src="img/navs/charts-active.png" alt=""></a href="">
+            <a href="pengambilan.html"><img src="img/navs/payment.png" alt=""></a href="">
+            <a href="profile.html"><img src="img/navs/profile.png" alt=""></a href="">
+         </div>
+         <div class="bot-line"><img src="img/navs/bot-line.png" alt=""></div>
+      </nav>
+      
+      <script>
+         const porductPlace = document.getElementById('product')
+         const products = [
+            {
+               name: 'Vicks Formula 44',
+               type: 'Obat Batuk',
+               img: 'img/product/Vicks.png',
+               price: 'Rp. 18.000'
+            },{
+               name: 'Dettol Hand Sanitizer',
+               type: 'Hand Sanitizer',
+               img: 'img/product/dettol.png',
+               price: 'Rp. 14.000'
+            },{
+               name: 'Panadol Paracatamol',
+               type: 'Paracetamol',
+               img: 'img/product/panadol.png',
+               price: 'Rp. 10.000'
+            },{
+               name: 'OBH combi',
+               type: 'Obat Batuk',
+               img: 'img/product/OBH combi.png',
+               price: 'Rp. 27.000'
+            },{
+               name: 'Antimo',
+               type: 'Dimenhidrinat',
+               img: 'img/product/antimo.png',
+               price: 'Rp. 12.000'
+            },{
+               name: 'Sensi Masker 50pcs',
+               type: 'Masker',
+               img: 'img/product/masker.png',
+               price: 'Rp. 95.000'
+            },{
+               name: 'Minyak Cap Lang',
+               type: 'Minyak Angin',
+               img: 'img/product/cap lang.png',
+               price: 'Rp. 25.000'
+            },{
+               name: 'Minyak Cap Lang',
+               type: 'Minyak Angin',
+               img: 'img/product/cap lang.png',
+               price: 'Rp. 25.000'
+            },{
+               name: 'Minyak Cap Lang',
+               type: 'Minyak Angin',
+               img: 'img/product/cap lang.png',
+               price: 'Rp. 25.000'
+            },
+         ]
+
+         products.forEach(product => {
+            porductPlace.innerHTML += 
+               `<div class="product">
+                  <div class="img">
+                     <img src="${product.img}" alt="">
+                  </div>
+                  <div class="text">
+                     <div class="name">${product.name}</div>
+                     <div class="type">${product.type}</div>
+                     <div class="price">${product.price}</div>
+                  </div>
+                  <div class="many">
+                     <div class="plus"><span>+</span></div>
+                     <div class="num"><span>0</span></div>
+                     <div class="minus"><span>-</span></div>
+                  </div>
+               </div>`
+         });
+      </script>
+   </main>
+</body>
+</html>

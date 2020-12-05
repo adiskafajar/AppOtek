@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: scroll;
+  font-family: "Montserrat", sans-serif;
+}
+
+main {
+  width: 375px;
+  height: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.home, .pengambilan, .profile, .daftar-apotek, .apotek, .shop, .pembayaran {
+  background: url(../../img/background/back-body.png) no-repeat;
+  background-position: 270px 234px;
+}

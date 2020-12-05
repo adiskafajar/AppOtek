@@ -1,0 +1,66 @@
+// shop style
+.shop 
+   .logo-back 
+      margin-bottom: 30px
+   .filter
+      width: 145px
+      padding: 7px
+      margin: 0 auto 10px
+      display: flex
+      align-items: center
+      border-radius: 20px
+      background-color: #231F20
+      box-shadow: 0 1px 3px rgba(0, 0, 0, .25)
+      img 
+         margin-right: 5px
+      .text
+         @include font(14px, 400)
+         color: $white
+         letter-spacing: .05em
+   .products 
+      .product
+         width: 365px
+         height: 94px
+         display: flex
+         margin: 0 auto 12px
+         background-color: $primary
+         box-shadow: 0 1px 4px rgba(0, 0, 0, .25)
+         // align-items: center
+         .img
+            margin-right: 8px
+         .text 
+            display: flex
+            flex-grow: 1
+            flex-direction: column
+            justify-content: center
+            .name
+               @include font(17px, 500)
+            .type
+               @include font(12px, 400)
+               margin-bottom: 12px
+            .price
+               @include font(14px, 700)
+         .many
+            width: 74px
+            display: flex
+            flex-direction: column
+            box-shadow: 0 1px 4px rgba(0, 0, 0, .25)
+            .plus, .minus 
+               height: 29px
+               box-shadow: 0 1px 4px rgba(0, 0, 0, .25)
+               display: flex
+               @include font(24px, 700)
+               
+               span 
+                  margin: auto
+            .num 
+               flex-grow: 1
+               display: flex
+               span
+                  margin: auto 
+                  @include font(24px, 700)
+            .plus
+               color: $plus
+            .minus
+               color: $minus
+
