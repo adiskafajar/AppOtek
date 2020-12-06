@@ -1,0 +1,28 @@
+.logo, .logo-back {
+  width: 375px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0 0 15px 15px;
+  z-index: 999;
+}
+
+.logo {
+  background-color: white;
+}
+.logo img {
+  margin: auto;
+}
+
+.logo-back {
+  padding: 10px 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-back span {
+  opacity: 0;
+}
