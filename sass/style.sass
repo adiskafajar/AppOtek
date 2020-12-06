@@ -7,6 +7,33 @@
 // start configuration
 @import 'config.sass'
 
+// class Helper
+@import 'helper.sass'
+
+// header 
+// @import 'header.sass'
+.logo, .logo-back
+   width: 375px
+   margin: 0 auto 20px 
+   padding: 10px 0
+   text-align: center
+   position: fixed
+   background-color: white
+   display: flex
+   box-shadow: 0 3px 4px rgba(0, 0, 0, .25)
+   border-radius: 15px
+
+.logo 
+   background-color: white
+   img
+      margin: auto
+
+.logo-back
+   justify-content: space-between
+   align-items: center
+   span 
+      opacity: 0
+
 // main style
 @import 'index.sass'
 @import 'home.sass'
@@ -16,9 +43,6 @@
 @import 'apotek.sass'
 @import 'shop.sass'
 @import 'pembayaran.sass'
-
-// class Helper
-@import 'helper.sass'
 
 // navbar 
 @import 'nav.sass'

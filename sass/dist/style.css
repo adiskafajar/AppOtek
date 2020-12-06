@@ -20,6 +20,63 @@ main {
 .home, .pengambilan, .profile, .daftar-apotek, .apotek, .shop, .pembayaran {
   background: url(../../img/background/back-body.png) no-repeat;
   background-position: 270px 234px;
+  padding-top: 50px;
+}
+
+.danger {
+  background-color: #FD4E4E;
+}
+
+.primary {
+  background-color: #FCFCFC;
+}
+
+.title {
+  text-align: left;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.title2 {
+  text-align: left;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 10px 0;
+}
+
+.title-line {
+  height: 2px;
+  width: 135px;
+  background-color: black;
+  margin-bottom: 10px;
+}
+
+.logo, .logo-back {
+  width: 375px;
+  margin: 0 auto 20px;
+  padding: 10px 0;
+  text-align: center;
+  position: fixed;
+  background-color: white;
+  display: flex;
+  box-shadow: 0 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+.logo {
+  background-color: white;
+}
+.logo img {
+  margin: auto;
+}
+
+.logo-back {
+  justify-content: space-between;
+  align-items: center;
+}
+.logo-back span {
+  opacity: 0;
 }
 
 .index .img {
@@ -508,50 +565,6 @@ main {
 }
 .pembayaran .methods .method img {
   margin-right: 17px;
-}
-
-.logo {
-  margin: 41px auto 20px;
-  text-align: center;
-}
-
-.logo-back {
-  display: flex;
-  justify-content: space-between;
-  margin: 41px auto 20px;
-  align-items: center;
-}
-.logo-back span {
-  opacity: 0;
-}
-
-.danger {
-  background-color: #FD4E4E;
-}
-
-.primary {
-  background-color: #FCFCFC;
-}
-
-.title {
-  text-align: left;
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-}
-
-.title2 {
-  text-align: left;
-  font-size: 24px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-}
-
-.title-line {
-  height: 2px;
-  width: 135px;
-  background-color: black;
-  margin-bottom: 10px;
 }
 
 nav {
